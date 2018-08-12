@@ -99,6 +99,11 @@ public class MyClass {
 
 		// Mapping role to player names
 		System.out.println(pakistan.getStream().collect(Collectors.groupingBy(Players::getRole,
-				Collectors.mapping(Players::getName, Collectors.toList()))));		
+				Collectors.mapping(Players::getName, Collectors.toList()))));	
+		
+		//Find bowler in SouthAfrica with batting avg greater than 30.00
+		southafrica.getStream()
+		           .filter(pl -> (pl.getRole().equals("bowler") && pl.getBattingAvg() > 30.00))
+		           .forEach(pl -> System.out.println("name is "+pl.getName()));
 	}
 }

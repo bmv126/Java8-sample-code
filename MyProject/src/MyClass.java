@@ -6,7 +6,6 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class MyClass {
-	
 	public static void main(String[] args) {		
 		Team australia = Team.createTeam("australia", 1);
 		Team india = Team.createTeam("india", 4);

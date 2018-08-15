@@ -105,5 +105,6 @@ public class MyClass {
 		southafrica.getStream()
 		           .filter(pl -> (pl.getRole().equals("bowler") && pl.getBattingAvg() > 30.00))
 		           .forEach(pl -> System.out.println("name is "+pl.getName()));
+		
 	}
 }

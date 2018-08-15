@@ -15,9 +15,6 @@ public class LambdaProblems {
 		
 		System.out.println(IntStream.range(1, 10)
 		         .filter(n -> n%3==0 || n%5==0)
-		         .reduce(0,(x,y)-> x+y));
-		         //.forEach(System.out::println);
-		         
-		
+		         .reduce(0,(x,y)-> x+y));		         
 	}
 }

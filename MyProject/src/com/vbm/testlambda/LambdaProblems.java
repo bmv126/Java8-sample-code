@@ -1,5 +1,6 @@
 package com.vbm.testlambda;
 
+import java.security.Identity;
 import java.util.function.IntPredicate;
 import java.util.function.Predicate;
 import java.util.stream.IntStream;
@@ -15,7 +16,8 @@ public class LambdaProblems {
 
 		//Print sum of multiples of 3 or 5 in a range
 		System.out.println(IntStream.range(1, 10)
-		         .filter(n -> n%3==0 || n%5==0)
-		         .reduce(0,(x,y)-> x+y));		         
+		         .filter(number -> (number%3==0 || number%5==0))
+		         .reduce(0,(x,y)-> x+y));	
+
 	}
 }

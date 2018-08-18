@@ -16,6 +16,8 @@ public class PecsExample {
 		// Illustrating Consumer Super
 		addAnimals(genDog, new GenericDog("genDog3"));
 		addAnimals(genDog, new Dog("dog3"));
+		
+		List<? super Dog> newTest = new ArrayList<>(Arrays.asList(new Animal()));
 	}
 
 	private static void displayDogs(List<? extends GenericDog> dogList) {

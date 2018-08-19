@@ -3,7 +3,7 @@ package com.vbm.testjava9;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class TestingArrayLists {
+public class TestingJavaArrayLists {
 	public static void main(String[] args) {
 		ArrayList<Integer> myIntegerList = new ArrayList<>();
 		myIntegerList.add(20);

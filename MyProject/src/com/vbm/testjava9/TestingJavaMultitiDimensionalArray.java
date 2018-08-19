@@ -1,6 +1,6 @@
 package com.vbm.testjava9;
 
-public class MultiDimensionalArray {
+public class TestingJavaMultitiDimensionalArray {
 
 	static void displayElements(int[][] matrix) {
 		for (int[] is : matrix) {
